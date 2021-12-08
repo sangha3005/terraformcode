@@ -11,7 +11,7 @@ resource "aws_eip" "bastion_eip" {
     command = "echo Destroy time prov `date` >> destroy-time-prov.txt"
     working_dir = "local-exec-output-files/"
     when = destroy
-    #on_failure = continue
+    #on_failure = continuee
 
 
   }  
