@@ -7,12 +7,17 @@ terraform {
       source = "hashicorp/aws"
       version = "~> 3.0"
     }
+      null = {
+      source = "hashicorp/null"
+      version = "~> 3.0"
+    } 
   }
 }
 
 provider "aws" {
     region = var.aws_region
     profile = "default"
-    access_key = "AKIARX7LD6PWW7SPC44D"
-    secret_key = "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"
+    access_key = "AKIARX7LD6PWZPHABJPW"
+    secret_key = "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"
+
   }
